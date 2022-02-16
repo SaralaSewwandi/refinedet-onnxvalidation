@@ -24,5 +24,9 @@ dummy_input = torch.randn(32, 3,320, 320)
 #torch.onnx.export(refinedet320, dummy_input, "/home/bmw/anaconda3/envs/check37/refinedet-pytorch/onnx/refinedet320.onnx", verbose=True, input_names=input_names, output_names=output_names, opset_version=11)
 #torch.onnx.export(refinedet320, dummy_input, "/home/bmw/anaconda3/envs/check37/refinedet-pytorch/onnx/opset12/refinedet320.onnx", verbose=True, input_names=input_names, output_names=output_names, opset_version=12, export_params=True)
 
-torch.onnx.export(refinedet320, dummy_input, "/home/bmw/anaconda3/envs/check37/refinedet-pytorch/onnx/rangefix/refinedet320.onnx", verbose=True, input_names=input_names, output_names=output_names, opset_version=12, export_params=True)
+#torch.onnx.export(refinedet320, dummy_input, "/home/bmw/anaconda3/envs/check37/refinedet-pytorch/onnx/rangefix/no_export_params/opset11/refinedet320.onnx", verbose=True, input_names=input_names, output_names=output_names, opset_version=11)
+
+#torch.onnx.export(refinedet320, dummy_input, "/home/bmw/anaconda3/envs/check37/refinedet-pytorch/onnx/original/refinedet320.onnx", verbose=True, input_names=input_names, output_names=output_names, opset_version=11)
+
+torch.onnx.export(refinedet320, dummy_input, "/home/bmw/anaconda3/envs/check37/refinedet-pytorch/onnx/latest/refinedet320.onnx", verbose=True, input_names=input_names, output_names=output_names, opset_version=11)
 
