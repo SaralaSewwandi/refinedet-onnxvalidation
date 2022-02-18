@@ -169,8 +169,6 @@ def eval_net():
 
     print('Evaluating detections')
     imdb.evaluate_detections(all_boxes, output_dir)
-    
 
-if __name__ == '__main__':
-    eval_net()
+eval_net()
 
